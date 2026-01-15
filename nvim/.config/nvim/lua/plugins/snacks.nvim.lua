@@ -61,6 +61,7 @@ return {
   keys = {
     { "<c-/>",      function() Snacks.terminal() end, desc = "Toggle Terminal" },
     { "<leader>un", function() Snacks.notifier.hide() end, desc = "Dismiss All Notifications" },
+    { "<leader>.",  function() Snacks.scratch() end, desc = "Toggle Scratch Buffer" },
     {
       "<leader>N",
       desc = "Neovim News",
