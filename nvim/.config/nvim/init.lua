@@ -24,6 +24,10 @@ vim.keymap.set("n", "-", "<cmd>Oil<cr>")
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+
+-- terminal mode
+vim.keymap.set("t", "<C-/>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+
 -- Normal mode
 vim.keymap.set('n', '<Find>', '^', { noremap = true, silent = true })  -- Go to line start (non-blank)
 vim.keymap.set('n', '<Select>', 'g_', { noremap = true, silent = true })  -- Go to line end (last non-blank)
