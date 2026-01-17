@@ -2,11 +2,11 @@ return {
   'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',  -- optional: updates parsers on install/update
   event = { 'BufReadPost', 'BufNewFile' },  -- lazy-load
-  dependencies = {
-    'nvim-treesitter/nvim-treesitter-textobjects',  -- optional
-  },
+--  dependencies = {
+--    'nvim-treesitter/nvim-treesitter-textobjects',  -- optional
+--  },
   config = function()
-    require('nvim-treesitter.configs').setup {
+    require('nvim-treesitter.config').setup {
       -- Parsers to install (or "all")
       ensure_installed = {
        'lua',
